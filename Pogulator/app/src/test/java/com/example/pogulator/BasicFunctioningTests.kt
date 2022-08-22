@@ -92,7 +92,7 @@ class BasicFunctioningTests {
         engine.pushDigit("10")
         engine.pushOperation(Operation.DIVIDE)
         engine.pushDigit("3")   //if precision of rounding is changed these will have to be changed
-        assertEquals("3.33333333",engine.doOperation())
+        assertEquals("3.333333333333333",engine.doOperation())
         engine.reset()
         engine.pushDigit("1000")
         engine.pushOperation(Operation.DIVIDE)
@@ -134,8 +134,7 @@ class BasicFunctioningTests {
         val engine = MathEngine()
         engine.pushDigit("25")
         engine.pushOperation(Operation.ROOT)
-        assertEquals("5.00000",engine.doOperation())
-
+        assertEquals("5.0000000000000000",engine.doOperation())
     }
 
     @Test
@@ -172,7 +171,6 @@ class BasicFunctioningTests {
         assertEquals("7",engine.operand1)
 
     }
-    //"1000","1,000".replace(",","")
 
 
 }

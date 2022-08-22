@@ -49,7 +49,6 @@ class MathEngine {
 
 
 
-
     fun doOperation(): String{
         if(operation==null&&histOperator!=null){
             operation=toOperation(histOperator.toString())

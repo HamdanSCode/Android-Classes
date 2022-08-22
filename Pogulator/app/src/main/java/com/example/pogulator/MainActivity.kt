@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         }
         if(savedInstanceState!=null){
             findViewById<TextView>(R.id.output).text=savedInstanceState.getString(OUTPUT)
-            if(savedInstanceState.getString(OUTPUT)!=null||savedInstanceState.getString(OUTPUT)!="")mathEngine.pushDigit(savedInstanceState.getString(OUTPUT).toString())
+            if(savedInstanceState.getString(OUTPUT)!=null||savedInstanceState.getString(OUTPUT)!="")mathEngine.pushDigit(savedInstanceState.getString(OUTPUT).toString().replace(",",""))
             findViewById<TextView>(R.id.history).text=savedInstanceState.getString(HISTORY)
         }
         findViewById<TextView>(R.id.output).setOnLongClickListener{
@@ -119,7 +119,7 @@ class MainActivity : AppCompatActivity() {
         displayOut()
     }
     catch (e:IllegalStateException){
-        Toast.makeText(this,e.toString(),Toast.LENGTH_SHORT).show()
+        Toast.makeText(this,e.message,Toast.LENGTH_SHORT).show()
         displayOut()
     }
     }
@@ -159,7 +159,7 @@ class MainActivity : AppCompatActivity() {
         displayOut()
         }
         catch(e:IllegalStateException){
-            Toast.makeText(this,e.toString(),Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,e.message,Toast.LENGTH_SHORT).show()
         }
     }
         fun others(v: View) {

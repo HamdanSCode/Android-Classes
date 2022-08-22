@@ -5,5 +5,5 @@
     android:interpolator="@android:anim/overshoot_interpolator"
     android:duration="500"
     android:fromAlpha="0"
-    android:toAlpha="100"
+    android:toAlpha="1"
     />
