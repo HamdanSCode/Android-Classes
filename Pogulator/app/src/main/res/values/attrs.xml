@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="normbutton" type="color"/>
+    <attr name="buttontext" type="color"/>
+    <attr name="operbutton" type="color"/>
+    <attr name="equalbutton" type="color"/>
+    <attr name="clearbutton" type="color"/>
+    <attr name="padbackground" type="color"/>
+    <attr name="numberbackground" type="color"/>
+    <attr name="backColor" type="color"/>
+    <attr name="outputColor" type="color"/>
+    <attr name="specialRipple" type="color"/>
+    <attr name="normButtonRipple" type="color"/>
+    <attr name="operRipple" type="color"/>
+
+</resources>

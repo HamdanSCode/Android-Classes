@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="marginButton" type="dimen">4dp</item>
+    <item name="paddingButton" type="dimen">8dp</item>
+    <item name="weight" type="integer">5</item>
+
+</resources>

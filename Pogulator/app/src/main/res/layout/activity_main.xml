@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:background="?backColor">
+
+
+
+
+<!--IF THERE ARE ISSUES WITH RIPPLES
+MAY WANT TO SEE IF ITS THE TINTING THAT CAUSES ISSUES-->
+    <LinearLayout
+        android:background="?backColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="end">
+        <TextView
+            android:id="@+id/history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="2+3"/>
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:text="5"
+            android:textColor="?outputColor"
+            android:textSize="48sp"/>
+    </LinearLayout>
+
+
+
+<!--    TextView setup-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?padbackground"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+        style="@style/buttonRow">
+        <ImageView
+            android:id="@+id/back"
+            android:src="@drawable/backspace_img"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:background="@drawable/normal_ripple"
+            android:gravity="center" />
+<!--            #6688cc-->
+        <TextView
+            android:visibility="invisible"
+            android:text="T"
+            style="@style/normButton"/>
+
+        <TextView
+            android:id="@+id/clear"
+            android:background="@drawable/clear_ripple"
+            android:text="C"
+            style="@style/normButton"/>
+
+        <TextView
+            android:id="@+id/divide"
+            android:background="@drawable/oper_ripple"
+            android:text="÷"
+            style="@style/normButton"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            style="@style/buttonRow">
+            <TextView
+                android:id="@+id/num7"
+                android:text="7"
+                style="@style/normButton"/>
+
+            <TextView
+                android:id="@+id/num8"
+                android:text="8"
+                style="@style/normButton"/>
+
+            <TextView
+                android:id="@+id/num9"
+                android:text="9"
+                style="@style/normButton"/>
+
+            <TextView
+                android:id="@+id/multi"
+                android:text="×"
+                android:background="@drawable/oper_ripple"
+                style="@style/normButton"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/buttonRow">
+            <TextView
+                android:id="@+id/num4"
+                android:text="4"
+                style="@style/normButton"/>
+
+            <TextView
+                android:id="@+id/num5"
+                android:text="5"
+                style="@style/normButton"/>
+
+            <TextView
+                android:id="@+id/num6"
+                android:text="6"
+                style="@style/normButton"/>
+
+            <TextView
+                android:id="@+id/sub"
+                android:text="-"
+                android:background="@drawable/oper_ripple"
+                style="@style/normButton"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/buttonRow">
+            <TextView
+                android:id="@+id/num1"
+                android:text="1"
+                style="@style/normButton"/>
+
+            <TextView
+                android:id="@+id/num2"
+                android:text="2"
+                style="@style/normButton"/>
+
+            <TextView
+                android:id="@+id/num3"
+                android:text="3"
+                style="@style/normButton"/>
+
+            <TextView
+                android:id="@+id/plus"
+                android:background="@drawable/oper_ripple"
+                android:text="+"
+                style="@style/normButton"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/buttonRow">
+            <TextView
+                android:id="@+id/posNeg"
+                android:text="±"
+                style="@style/normButton"/>
+
+            <TextView
+                android:id="@+id/num0"
+                android:text="0"
+                style="@style/normButton"/>
+
+            <TextView
+                android:id="@+id/deci"
+                android:text="."
+                style="@style/normButton"/>
+
+            <TextView
+                android:id="@+id/equal"
+                android:background="@drawable/equal_ripple"
+                android:text="="
+                style="@style/normButton"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
